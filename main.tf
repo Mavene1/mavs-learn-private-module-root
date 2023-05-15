@@ -2,8 +2,8 @@ provider "aws" {
   region = var.region
 }
 
-module "s3-webapp" {
-  source  = "app.terraform.io/hashicorp-learn/s3-webapp/aws"
+module "s3-webapp-mavs" {
+  source  = "app.terraform.io/MaveneOrg/s3-webapp-mavs/aws"
   name    = var.name
   region  = var.region
   prefix  = var.prefix
